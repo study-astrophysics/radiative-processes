@@ -81,7 +81,7 @@ npx quartz create
 # Connect the Local Quartz to GitHub
 
 1. **Set the remote destination:** `git remote set-url origin https://github.com/study-astrophysics/radiative-processes.git`
-2. **First upload**: `npx quartz sync --no-pull`
+2. **First upload**: ``
 
 # Sync
 
