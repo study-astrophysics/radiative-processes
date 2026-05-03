@@ -2,7 +2,7 @@
 # Fundamentals of Radiative Transfer
 
 [[The Electromagnetic Spectrum]]
-
+[[Radiative Flux]]
 
 
 
