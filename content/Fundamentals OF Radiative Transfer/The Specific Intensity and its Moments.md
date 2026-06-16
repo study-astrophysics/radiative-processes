@@ -16,8 +16,8 @@ where
 
 ### Dimensional Analysis of $I_\nu$
 
-$$ \begin{split} I_\nu (\nu,\Omega) & =\mathrm{\ (energy) \ (time)^{-1} \ (area)^{-1} \ (solid \ angle)^{-1} \ (frequency)^{-1}} \\
-& = \mathrm{\ erg \ s^{-1} \ cm^{-2} \ ster^{-1} \ Hz^{-1}} \end{split}.$$
+$$ \begin{align} I_\nu (\nu,\Omega) & =\mathrm{\ (energy) \ (time)^{-1} \ (area)^{-1} \ (solid \ angle)^{-1} \ (frequency)^{-1}} \\
+& = \mathrm{\ erg \ s^{-1} \ cm^{-2} \ ster^{-1} \ Hz^{-1}} \end{align}.$$
 
 
 
@@ -40,5 +40,22 @@ $$ F_\nu = \int I_\nu \cos\theta \ d\Omega.$$
 Note, if $I_\nu$ is an isotropic radiation field, then the net flux is zero, since $\int \cos\theta \ d\Omega = 0$.
 
 
-## Momentum Flux
+## Momentum Flux Normal to $dA$ = Pressure
+
+Momentum flux normal to $dA$
+= Momentum per unit time per unit area 
+= Pressure
+
+- (Momentum of a photon) = $E/c$
+- (Momentum flux along the ray at angle $\theta$) = $dF_\nu/c$.
+
+
+To get the component of momentum flux normal to $dA$, we multiply the net flux by another factor of $\cos\theta$. Integrating, we get
+
+
+$$ p_\nu \mathrm{(dynes \ cm^{-2} \ Hz^{-1})}  = \frac{1}{c} \int I_\nu \cos^2\theta d\Omega. $$
+
+
+
+
 
