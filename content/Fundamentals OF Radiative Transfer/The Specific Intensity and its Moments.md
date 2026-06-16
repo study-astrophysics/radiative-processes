@@ -16,8 +16,7 @@ where
 
 ### Dimensional Analysis of $I_\nu$
 
-$$ \begin{aligned} I_\nu (\nu,\Omega) & =\mathrm{\ (energy) \ (time)^{-1} \ (area)^{-1} \ (solid \ angle)^{-1} \ (frequency)^{-1}} \\
-& = \mathrm{\ erg \ s^{-1} \ cm^{-2} \ ster^{-1} \ Hz^{-1}} \end{aligned}.$$
+$$ \begin{aligned} I_\nu (\nu,\Omega) & =\mathrm{\ (energy) \ (time)^{-1} \ (area)^{-1} \ (solid \ angle)^{-1} \ (frequency)^{-1}} \\ & = \mathrm{\ erg \ s^{-1} \ cm^{-2} \ ster^{-1} \ Hz^{-1}} \end{aligned}.$$
 
 
 
@@ -57,7 +56,7 @@ $$ \mathrm{(Momentum \ Flux \ Normal \ to \ } dA) = \mathrm{(Net \ Flux)} \times
 
 $$ p_\nu \mathrm{(dynes \ cm^{-2} \ Hz^{-1})}  = \frac{1}{c} \int I_\nu \cos^2\theta d\Omega. $$
 
+Note that $F_\nu$ and $p_\nu$ are moments (multiplications by powers of $\cos\theta$ and integration over $d\Omega$) of the intensity $I_\nu$
 
 
-
-
+Then for the total 
