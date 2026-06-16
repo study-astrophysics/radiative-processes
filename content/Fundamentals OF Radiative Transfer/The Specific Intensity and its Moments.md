@@ -59,4 +59,14 @@ $$ p_\nu \mathrm{(dynes \ cm^{-2} \ Hz^{-1})}  = \frac{1}{c} \int I_\nu \cos^2\t
 Note that $F_\nu$ and $p_\nu$ are moments (multiplications by powers of $\cos\theta$ and integration over $d\Omega$) of the intensity $I_\nu$
 
 
-Then for the total 
+Then for the total (integrated) values are:
+
+$$ F \,(\mathrm{erg \ s^{-1} \ cm^{-2}}) = \int F_\nu d\nu$$
+
+$$ p \,(\mathrm{dynes \ cm^{-2}}) = \int p_\nu d\nu$$
+
+$$ I \,(\mathrm{erg \ s^{-1} \ cm^{-2} \ ster^{-1}}) = \int I_\nu d\nu$$
+
+
+## Radiative Energy Density
+
