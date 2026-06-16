@@ -68,5 +68,5 @@ $$ p \,(\mathrm{dynes \ cm^{-2}}) = \int p_\nu d\nu$$
 $$ I \,(\mathrm{erg \ s^{-1} \ cm^{-2} \ ster^{-1}}) = \int I_\nu d\nu$$
 
 
-## Radiative Energy Density
+## Radiative Specific Energy Density
 
