@@ -16,8 +16,8 @@ where
 
 ### Dimensional Analysis of $I_\nu$
 
-$$ \begin{split} I_\nu (\nu,\Omega) & =\rm{\ (energy) \ (time)^{-1} \ (area)^{-1} \ (solid \ angle)^{-1} \ (frequency)^{-1}} \\
-& = \rm{\ erg \ s^{-1} \ cm^{-2} \ ster^{-1} \ Hz^{-1}} \end{split}.$$
+$$ \begin{split} I_\nu (\nu,\Omega) & =\mathrm{\ (energy) \ (time)^{-1} \ (area)^{-1} \ (solid \ angle)^{-1} \ (frequency)^{-1}} \\
+& = \mathrm{\ erg \ s^{-1} \ cm^{-2} \ ster^{-1} \ Hz^{-1}} \end{split}.$$
 
 
 
