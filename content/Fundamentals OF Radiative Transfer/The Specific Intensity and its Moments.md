@@ -19,7 +19,7 @@ where
 $$ \begin{aligned} I_\nu (\nu,\Omega) & =\mathrm{\ (energy) \ (time)^{-1} \ (area)^{-1} \ (solid \ angle)^{-1} \ (frequency)^{-1}} \\ & = \mathrm{\ erg \ s^{-1} \ cm^{-2} \ ster^{-1} \ Hz^{-1}} \end{aligned}.$$
 
 
-
+---
 ## Net Flux
 
 
@@ -38,7 +38,7 @@ $$ F_\nu = \int I_\nu \cos\theta \ d\Omega.$$
 
 Note, if $I_\nu$ is an isotropic radiation field, then the net flux is zero, since $\int \cos\theta \ d\Omega = 0$.
 
-
+---
 ## Momentum Flux Normal to $dA$ = Pressure
 
 (Momentum flux normal to $dA$)
@@ -67,6 +67,25 @@ $$ p \,(\mathrm{dynes \ cm^{-2}}) = \int p_\nu d\nu$$
 
 $$ I \,(\mathrm{erg \ s^{-1} \ cm^{-2} \ ster^{-1}}) = \int I_\nu d\nu$$
 
+---
+## Radiative Specific Energy Density ($u_\nu$)
 
-## Radiative Specific Energy Density
+The energy per unit volume per unit frequency range.
 
+
+### Energy density per unit solid angle ($u_\nu(\Omega)$)
+
+$$ dE = u_\nu(\Omega) \, dV \, d\Omega \, d\nu $$
+
+- $dV$: Volume element.
+
+
+Consider a cylinder about a ray of length $ct$, and the volume of the cylinder is $dV = dA \, c \, dt$:
+
+$$  dE = u_\nu(\Omega) \, dA \,c \,dt \, d\Omega \, d\nu  $$
+
+Radiation travels at velocity $c$, so in time $dt$, all the radiation in the cylinder will pass out of it:
+
+$$ dE = I_\nu \, dA \, d\Omega \, dt \,d\nu $$
+
+- $I_\nu = u_\nu$
