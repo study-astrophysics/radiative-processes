@@ -88,4 +88,52 @@ Radiation travels at velocity $c$, so in time $dt$, all the radiation in the cyl
 
 $$ dE = I_\nu \, dA \, d\Omega \, dt \,d\nu $$
 
-- $I_\nu = u_\nu$
+Then,
+$$u_\nu(\Omega) = \frac{I_\nu}{c}. $$
+
+Integrating over all solid angle:
+
+$$ u_\nu = \int u_\nu(\Omega) \, d\Omega = \frac{1}{c} \int I_\nu \, d\Omega, $$
+
+or
+
+$$ u_\nu = \frac{4\pi}{c} J_\nu. $$
+
+
+---
+## Mean Intensity $J_\nu$
+
+
+$$ J_\nu = \frac{1}{4\pi} \int I_\nu \, d\Omega. $$
+
+---
+## Total Radiation Density
+
+$$ u = \int u_\nu \, d\nu = \frac{4\pi}{c} \int J_\nu \, d\nu. $$
+
+- Unit: $\mathrm{erg \ cm}^{-3}$ 
+
+---
+## Radiation Pressure 
+
+
+### Radiation Pressure in an Enclosure Containing an Isotropic Radiation Field
+
+
+In a reflecting enclosure containing an isotropic radiation field, each photon transfers "twice" its normal component of momentum on reflection.
+
+$$ p_\nu = \frac{2}{c} \int I_\nu \, \cos^2 \, \theta \, d\Omega $$ 
+Integrating over $2\pi$ steradians, and by isotropy, $I_\nu = J_\nu$,
+
+
+$$ p = \frac{2}{c} \int J_\nu \, d\nu \int \cos^2 \theta \, d\Omega. $$
+
+The angular integration yields
+
+$$ p = \frac{1}{3}u. $$
+
+**The radiation pressure of an isotropic radiation field is one-third the energy density.**
+
+---
+## Constancy of Specific Intensity Along Rays in Free Space
+
