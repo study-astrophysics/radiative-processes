@@ -1,4 +1,4 @@
-
+ 
 ## Definition of Specific Intensity or Brightness
 
 
@@ -136,4 +136,37 @@ $$ p = \frac{1}{3}u. $$
 
 ---
 ## Constancy of Specific Intensity Along Rays in Free Space
+
+
+The intensity is constant along a ray:
+
+$$ I_\nu = \mathrm{constant.} $$
+
+$$ \frac{d I_\nu}{ds} = 0, $$
+
+- $ds$: differential element of length along the ray.
+
+---
+### Proof of the Inverse Square Law for a Uniformly Bright Sphere
+
+
+The flux from a uniformly bright sphere:
+
+
+$$ F = \int I\, \cos \theta \, d\Omega = B \int^{2\pi}_0 d\phi \int^{\theta_c}_0 \sin\theta \cos \theta \, d\theta,  $$
+- $\theta_c = \sin^{-1}(R/r)$: angle at which a ray from $P$ is tangent to the sphere
+
+Then,
+
+$$ F = \pi B(1-\cos^2\theta_c) = \pi B \sin^2\theta_c $$
+or
+
+$$ F = \pi B \left(  \frac{R}{r} \right)^2. $$
+
+Thus, the specific intensity is constant, but the solid angle subtended by the given object decreases in such a way that the inverse square law is recovered.
+
+If $r = R$, the flux at a surface of uniform brightness $B$ is simply $\pi B$:
+
+$$ F = \pi B.$$
+
 
