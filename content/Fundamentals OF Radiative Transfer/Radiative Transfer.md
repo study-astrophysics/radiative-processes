@@ -59,3 +59,57 @@ $$ dI_\nu = j_\nu \, ds.$$
 
 ---
 ## Absorption
+
+
+### Absorption Coefficient $\alpha_\nu$
+
+Represents the loss of intensity in a beam as it travels a distance $ds$: 
+
+$$ dI_\nu = - \alpha_\nu \, I_\nu \, ds. $$
+
+- $[\alpha_\nu]=\mathrm{cm}^{-1}$: absorption coefficient (positive for energy taken out of beam) 
+
+
+---
+### Microscopic view
+
+- number density $n$: number per unit volume
+	- cross section $\sigma_\nu=\mathrm{cm}^2$: each present an effective absorbing area
+- Assumption: the absorbers are assumed to be randomly distributed
+
+
+Consider a situation that a ray passes through a medium of absorbers through $dA$ within solid angle $d\Omega$. 
+
+The number of absorbers in the element = $n \, dA \, ds$.
+
+The total absorbing area presented by absorbers = $n \, \sigma_\nu \, dA \, ds$.
+
+The energy absorbed out of the beam:
+
+$$ - dI\nu \, dA \, d\Omega \, dt \, d\nu = I_\nu \, (n \,\sigma_\nu \, dA \, ds)\, d\Omega \, dt \, d\nu; $$
+
+thus,
+
+$$ dI\nu = - n \, \sigma_\nu \, I_\nu \, ds. $$
+- $\alpha_\nu = n \, \sigma_\nu$
+
+Often $\alpha_\nu$ is written as
+
+$$ \alpha_\nu = \rho \, \kappa_\nu. $$
+- $\rho$: mass density
+- $[\kappa_\nu] = \mathrm{cm^2 \ g^{-1}}$: mass absorption coefficient, or opacity coefficient
+
+Some conditions of validity for the microscopic picture.
+
+1. The linear scale of the cross section must be small in comparison to the mean interparticle distance $d$.
+	1. $\sigma^{1/2}_\nu \ll d \sim n^{-1/3}$ from which follows $\alpha_\nu \, d \ll 1$.
+2. The absorbers are independent and randomly distributed.
+
+These conditions are almost always met for astrophysical problems.
+
+We consider "absorption" to include both "true absorption" and "stimulated emission," because both are proportional to the intensity of the incoming beam.
+	Thus, the "net absorption" may be positive or negative."
+
+
+--- 
+## The Radiative Transfer Equation
