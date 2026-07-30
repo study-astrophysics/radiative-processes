@@ -113,3 +113,27 @@ We consider "absorption" to include both "true absorption" and "stimulated emiss
 
 --- 
 ## The Radiative Transfer Equation
+
+Combining the effects of emission and absorption:
+
+$$ \frac{dI\nu}{ds} = -\alpha_\nu \, I_\nu + j_\nu.$$
+
+A formalism within which to solve for the intensity in an emitting and absorbing medium.
+
+When scattering is present, solution of the radiative transfer equation is more difficult, because emission into $d\Omega$ depends on $I_\nu$ in solid angles $d\Omega'$, integrated over the latter (scattering from $d\Omega\$ into $d\Omega$). The transfer equation then becomes an integrodifferential equation.
+
+
+---
+### Emission Only: $\alpha_\nu = 0$
+
+$$  \frac{dI\nu}{ds} = j_\nu. $$
+
+The solution
+
+$$ I_\nu(s) = I_\nu(s_0) + \int^s_{s_0} j_\nu(s') \, ds'. $$
+
+The increase in brightness = The emission coefficient integrated along the line of sight.
+
+---
+### Absorption Only: $j_\nu=0$
+
