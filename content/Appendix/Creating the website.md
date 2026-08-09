@@ -71,7 +71,7 @@ added 2 packages, removed 2 packages, changed 10 packages, and audited 486 packa
 found 0 vulnerabilities
 ```
 
-## Install the required dependencies
+## Make the Local Quartz
 
 ``` shell
 npx quartz create
@@ -81,7 +81,14 @@ npx quartz create
 # Connect the Local Quartz to GitHub
 
 1. **Set the remote destination:** `git remote set-url origin https://github.com/study-astrophysics/radiative-processes.git`
-2. **First upload**: ``
+2. **First upload**: `npx quartz sync --no-pull`
+
+# Turn on GitHub Pages
+
+1. Go to the repository on GitHub.
+2. Click on **Settings** (the gear icon at the top).
+3. On the left sidebar, click on **Pages**.
+4. Under the **Build and deployment** section, look for the **Source** dropdown menu. Change it to **GitHub Actions**.
 
 # Sync
 

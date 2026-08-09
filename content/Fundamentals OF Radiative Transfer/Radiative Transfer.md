@@ -128,12 +128,57 @@ When scattering is present, solution of the radiative transfer equation is more 
 
 $$  \frac{dI\nu}{ds} = j_\nu. $$
 
-The solution
+The solution is
 
 $$ I_\nu(s) = I_\nu(s_0) + \int^s_{s_0} j_\nu(s') \, ds'. $$
+- $s_0$: arbitrary, it sets the zero point for the optical depth scale.
 
-The increase in brightness = The emission coefficient integrated along the line of sight.
+**The increase in brightness = The emission coefficient integrated along the line of sight.**
 
 ---
 ### Absorption Only: $j_\nu=0$
+
+
+$$ \frac{d I_\nu}{ds} = - \alpha_\nu \, I_\nu. $$
+
+The solution is
+
+
+$$ I_\nu(s) = I_\nu(s_0) \exp \left[ - \int^s_{s_0} \alpha_\nu (s') \,ds' \right]. $$
+
+
+**The brightness decreases along the ray by the exponential of the absorption coefficient integrated along the line of sight.**
+
+
+---
+### Optical Depth and Source Function
+
+
+#### Optical Depth
+
+$$ d\tau_\nu = \alpha_\nu \, ds, $$
+
+or 
+
+$$ \tau_\nu (s) = \int^s_{s_0} \alpha_\nu (s') \, ds'. $$
+
+It is measured along the path of a traveling ray. 
+It is measured backward along the ray and a minus sign appears.
+
+In plane-parallel media, $ds$ is replaced by $dz$ and $\tau_\nu = \tau_\nu(z)$. 
+
+
+#### Optically thick (opaque): $\tau_\nu > 1$
+
+The average photon of frequency $\nu$ cannot traverse the entire medium without being absorbed.
+
+#### Optically thin (transparent):  $\tau_\nu < 1$
+
+The typical photon of frequency $\nu$ can traverse the medium without being absorbed.
+
+
+
+transfer function
+
+source function
 
