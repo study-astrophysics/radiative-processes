@@ -86,7 +86,7 @@ The total absorbing area presented by absorbers = $n \, \sigma_\nu \, dA \, ds$.
 
 The energy absorbed out of the beam:
 
-$$ - dI\nu \, dA \, d\Omega \, dt \, d\nu = I_\nu \, (n \,\sigma_\nu \, dA \, ds)\, d\Omega \, dt \, d\nu; $$
+$$ - dI_\nu \, dA \, d\Omega \, dt \, d\nu = I_\nu \, (n \,\sigma_\nu \, dA \, ds)\, d\Omega \, dt \, d\nu; $$
 
 thus,
 
@@ -116,7 +116,7 @@ We consider "absorption" to include both "true absorption" and "stimulated emiss
 
 Combining the effects of emission and absorption:
 
-$$ \frac{dI\nu}{ds} = -\alpha_\nu \, I_\nu + j_\nu.$$
+$$ \frac{dI_\nu}{ds} = -\alpha_\nu \, I_\nu + j_\nu.$$
 
 A formalism within which to solve for the intensity in an emitting and absorbing medium.
 
@@ -126,7 +126,7 @@ When scattering is present, solution of the radiative transfer equation is more 
 ---
 ### Emission Only: $\alpha_\nu = 0$
 
-$$  \frac{dI\nu}{ds} = j_\nu. $$
+$$  \frac{dI_\nu}{ds} = j_\nu. $$
 
 The solution is
 
