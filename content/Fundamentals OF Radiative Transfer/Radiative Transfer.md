@@ -167,6 +167,7 @@ It is measured backward along the ray and a minus sign appears.
 
 In plane-parallel media, $ds$ is replaced by $dz$ and $\tau_\nu = \tau_\nu(z)$. 
 
+The optical depth scale reveals more clearly the important intervals along a ray as far as radiation is concerned.
 
 #### Optically thick (opaque): $\tau_\nu > 1$
 
@@ -176,9 +177,45 @@ The average photon of frequency $\nu$ cannot traverse the entire medium without 
 
 The typical photon of frequency $\nu$ can traverse the medium without being absorbed.
 
+---
+## Radiative transfer equation (often used)
 
 
-transfer function
+After dividing the original transfer equation by $\tau_\nu$:
 
-source function
 
+$$   \frac{dI_\nu}{d\tau_\nu} = - I_\nu + S_\nu,
+$$
+
+- $S_\nu$: source function
+
+
+## Source function
+
+The ratio of the emission coefficient to the absorption coefficient:
+
+$$ S_\nu \equiv \frac{j_\nu}{\alpha_\nu}. $$
+
+$S_\nu$ is often a simpler physical quantity than the $j_\nu$.
+
+
+---
+## Formal solution of the transfer equation
+
+Using the integrating factor $e^{\tau_\nu}$,
+
+$$ \mathcal{I} = I_\nu \,e^{\tau_\nu}, \quad \mathcal{S} = S_\nu \,e^{\tau_\nu},  $$
+
+then the equation becomes
+
+
+$$ \frac{d \mathcal{I}}{d \tau_\nu} = \mathcal{S},$$
+
+with the solution
+
+
+$$ \mathcal{I}(\tau_\nu) = \mathcal{I}(0) + \int^{\tau_\nu}_0 \mathcal{S}(\tau'_\nu)\, d \tau'_\nu. $$
+
+Rewriting it give the formal solution:
+
+$$ I_\nu(\tau_\nu) = I_\nu(0)\, e^{\tau_\nu} + \int^{\tau_\nu}_0 e^{-(\tau_\nu-\tau'_\nu)} \,S(\tau'_\nu)\, d \tau'_\nu.  $$
