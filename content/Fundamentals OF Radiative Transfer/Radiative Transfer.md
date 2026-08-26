@@ -144,7 +144,7 @@ $$ \frac{d I_\nu}{ds} = - \alpha_\nu \, I_\nu. $$
 The solution is
 
 
-$$ I_\nu(s) = I_\nu(s_0) \exp \left[ - \int^s_{s_0} \alpha_\nu (s') \,ds' \right]. $$
+$$ I_\nu(s) = I_\nu(s_0) \, \exp \left[ - \int^s_{s_0} \alpha_\nu (s') \,ds' \right]. $$
 
 
 **The brightness decreases along the ray by the exponential of the absorption coefficient integrated along the line of sight.**
@@ -237,5 +237,37 @@ $$ \therefore I_\nu(\tau_\nu) = I_\nu(0) \, e^{-\tau_\nu} + S_\nu (1- e^{-\tau_\
 - "Relaxation": $I_\nu$ tries to approach $S_\nu$, given sufficient optical depth.
 
 ---
-### Mean Free Path
+### Mean Free Path $l_\nu$
 
+>[!note] Mean free path $l_\nu$
+>An average distance a photon can travel through an absorbing material without being absorbed.
+> $$l_\nu = \frac{1}{\alpha_\nu} = \frac{1}{n\,\sigma_\nu}$$
+
+- $\alpha_\nu$: absorption coefficient
+- $n$: number density
+- $\sigma_\nu$: cross-sectional area (effective cross-sectional area if necessary)
+
+
+- Reciprocal of the absorption coefficient for homogeneous material (of a homogeneous material).
+
+#### Derivation
+
+From 
+
+$$ I_\nu(s) = I_\nu(s_0) \, \exp \left[ - \int^s_{s_0} \alpha_\nu (s') \,ds' \right], $$
+
+the probability of a photon traveling at least an optical depth $\tau_\nu$ is $e^{-\tau_\nu}$ (probability distribution function). Then the mean optical depth is
+
+$$ \langle \tau_\nu \rangle  = \int^\infty_0 \tau_\nu \, e^{-\tau_\nu} \, d\tau_\nu = 1. $$
+
+Mean physical distance traveled in a homogeneous medium = mean free path $l_\nu$ is 
+
+
+$$ \langle \tau_\nu \rangle = \alpha_\nu \, l_\nu = 1. $$
+
+Or
+
+$$ l_\nu = \frac{1}{\alpha_\nu} = \frac{1}{n\,\sigma_\nu}. $$
+- Reciprocal of the absorption coefficient for homogeneous material.
+
+---
