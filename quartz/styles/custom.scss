@@ -1,15 +1,17 @@
 @use "./base.scss";
 
 // put your custom CSS here!
-/* Center block math equations */
-.math-display {
-  display: flex;
-  justify-content: center;
-  overflow-x: auto;
-  margin: 1rem 0;
+/* Force center block math equations */
+.math-display, .math.math-display {
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  overflow-x: auto !important;
+  margin: 1.5rem 0 !important;
 }
 
 .katex-display {
-  text-align: center;
-  margin: 0 auto;
+  text-align: center !important;
+  margin: 0 auto !important;
 }
