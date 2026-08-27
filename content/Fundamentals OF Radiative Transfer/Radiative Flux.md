@@ -15,10 +15,14 @@ The amount of energy passing through the element should be proportional to $dA\,
 A source of radiation is called *isotropic* if it emits energy equally in all directions.
 
 
-$$ F(r_1) \cdot 4\pi r^2_1 = F(r_2) \cdot 4\pi r_2^2 $$
+$$
+F(r_1) \cdot 4\pi r^2_1 = F(r_2) \cdot 4\pi r_2^2
+$$
 
 or
 
-$$ F(r) = \frac{F(r_1)r_1^2}{r^2} = \frac{\mathrm{constant}}{r^2} \propto \frac{1}{r^2} $$
+$$
+F(r) = \frac{F(r_1)r_1^2}{r^2} = \frac{\mathrm{constant}}{r^2} \propto \frac{1}{r^2}
+$$
 : Conservation of energy.
 

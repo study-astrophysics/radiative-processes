@@ -10,14 +10,18 @@ If a ray "passes through matter", energy may be added or subtracted from it by e
 
 The energy emitted per unit time per unit solid angle per unit volume:
 
-$$ dE = j \, dV \, d\Omega \, dt. $$
+$$
+dE = j \, dV \, d\Omega \, dt.
+$$
 
 - $j = \mathrm{erg \ cm ^{-3} \ s^{-1} \ ster^{-1} }$  
 
 ---
 #### Monochromatic Emission Coefficient $j_\nu$
 
-$$ dE = j_\nu \, dV \, d\Omega \, dt \, d\nu. $$
+$$
+dE = j_\nu \, dV \, d\Omega \, dt \, d\nu.
+$$
 
 - $j_\nu = \mathrm{erg \ cm ^{-3} \ s^{-1} \ ster^{-1} \ Hz^{-1} }$ 
 
@@ -28,7 +32,9 @@ In general, the emission coefficient depends on the direction into which emissio
 
 For an *isotropic* emitter, or for a distribution of randomly oriented emitters:
 
-$$ j_\nu = \frac{1}{4\pi} P_\nu, $$
+$$
+j_\nu = \frac{1}{4\pi} P_\nu,
+$$
 
 - $P_\nu$: radiated power per unit volume per unit frequency
 
@@ -39,7 +45,9 @@ The energy emitted spontaneously per unit frequency per unit time per unit mass.
 
 If the emission is isotropic:
 
-$$ dE = \epsilon_\nu \, \rho \, dV \, dt \, \frac{d\Omega}{4\pi}  $$
+$$
+dE = \epsilon_\nu \, \rho \, dV \, dt \, \frac{d\Omega}{4\pi}
+$$
 
 - $[\epsilon_\nu] = \mathrm{erg \ g^{-1} \ s^{-1} \ Hz^{-1}}$: emissivity
 - $\rho$: mass density of the emitting medium
@@ -51,11 +59,15 @@ $$ dE = \epsilon_\nu \, \rho \, dV \, dt \, \frac{d\Omega}{4\pi}  $$
 
 For isotropic emission:
 
-$$ j_\nu = \frac{\epsilon_\nu \, \rho}{4\pi} $$
+$$
+j_\nu = \frac{\epsilon_\nu \, \rho}{4\pi}
+$$
 
 In going a distance $ds$, a beam of cross section $dA$ travels through a volume $dV = dA \, ds$, the intensity added to the beam by spontaneous emission:
 
-$$ dI_\nu = j_\nu \, ds.$$
+$$
+dI_\nu = j_\nu \, ds.
+$$
 
 ---
 ## Absorption
@@ -65,7 +77,9 @@ $$ dI_\nu = j_\nu \, ds.$$
 
 Represents the loss of intensity in a beam as it travels a distance $ds$: 
 
-$$ dI_\nu = - \alpha_\nu \, I_\nu \, ds. $$
+$$
+dI_\nu = - \alpha_\nu \, I_\nu \, ds.
+$$
 
 - $[\alpha_\nu]=\mathrm{cm}^{-1}$: absorption coefficient (positive for energy taken out of beam) 
 
@@ -86,16 +100,22 @@ The total absorbing area presented by absorbers = $n \, \sigma_\nu \, dA \, ds$.
 
 The energy absorbed out of the beam:
 
-$$ - dI_\nu \, dA \, d\Omega \, dt \, d\nu = I_\nu \, (n \,\sigma_\nu \, dA \, ds)\, d\Omega \, dt \, d\nu; $$
+$$
+- dI_\nu \, dA \, d\Omega \, dt \, d\nu = I_\nu \, (n \,\sigma_\nu \, dA \, ds)\, d\Omega \, dt \, d\nu;
+$$
 
 thus,
 
-$$ dI\nu = - n \, \sigma_\nu \, I_\nu \, ds. $$
+$$
+dI\nu = - n \, \sigma_\nu \, I_\nu \, ds.
+$$
 - $\alpha_\nu = n \, \sigma_\nu$
 
 Often $\alpha_\nu$ is written as
 
-$$ \alpha_\nu = \rho \, \kappa_\nu. $$
+$$
+\alpha_\nu = \rho \, \kappa_\nu.
+$$
 - $\rho$: mass density
 - $[\kappa_\nu] = \mathrm{cm^2 \ g^{-1}}$: mass absorption coefficient, or opacity coefficient
 
@@ -116,7 +136,9 @@ We consider "absorption" to include both "true absorption" and "stimulated emiss
 
 Combining the effects of emission and absorption:
 
-$$ \frac{dI_\nu}{ds} = -\alpha_\nu \, I_\nu + j_\nu.$$
+$$
+\frac{dI_\nu}{ds} = -\alpha_\nu \, I_\nu + j_\nu.
+$$
 
 A formalism within which to solve for the intensity in an emitting and absorbing medium.
 
@@ -126,11 +148,15 @@ When scattering is present, solution of the radiative transfer equation is more 
 ---
 ### Emission Only: $\alpha_\nu = 0$
 
-$$  \frac{dI_\nu}{ds} = j_\nu. $$
+$$
+\frac{dI_\nu}{ds} = j_\nu.
+$$
 
 The solution is
 
-$$ I_\nu(s) = I_\nu(s_0) + \int^s_{s_0} j_\nu(s') \, ds'. $$
+$$
+I_\nu(s) = I_\nu(s_0) + \int^s_{s_0} j_\nu(s') \, ds'.
+$$
 - $s_0$: arbitrary, it sets the zero point for the optical depth scale.
 
 **The increase in brightness = The emission coefficient integrated along the line of sight.**
@@ -139,12 +165,16 @@ $$ I_\nu(s) = I_\nu(s_0) + \int^s_{s_0} j_\nu(s') \, ds'. $$
 ### Absorption Only: $j_\nu=0$
 
 
-$$ \frac{d I_\nu}{ds} = - \alpha_\nu \, I_\nu. $$
+$$
+\frac{d I_\nu}{ds} = - \alpha_\nu \, I_\nu.
+$$
 
 The solution is
 
 
-$$ I_\nu(s) = I_\nu(s_0) \, \exp \left[ - \int^s_{s_0} \alpha_\nu (s') \,ds' \right]. $$
+$$
+I_\nu(s) = I_\nu(s_0) \, \exp \left[ - \int^s_{s_0} \alpha_\nu (s') \,ds' \right].
+$$
 
 
 **The brightness decreases along the ray by the exponential of the absorption coefficient integrated along the line of sight.**
@@ -156,11 +186,15 @@ $$ I_\nu(s) = I_\nu(s_0) \, \exp \left[ - \int^s_{s_0} \alpha_\nu (s') \,ds' \ri
 
 #### Optical Depth
 
-$$ d\tau_\nu = \alpha_\nu \, ds, $$
+$$
+d\tau_\nu = \alpha_\nu \, ds,
+$$
 
 or 
 
-$$ \tau_\nu (s) = \int^s_{s_0} \alpha_\nu (s') \, ds'. $$
+$$
+\tau_\nu (s) = \int^s_{s_0} \alpha_\nu (s') \, ds'.
+$$
 
 It is measured along the path of a traveling ray. 
 It is measured backward along the ray and a minus sign appears.
@@ -184,7 +218,8 @@ The typical photon of frequency $\nu$ can traverse the medium without being abso
 After dividing the original transfer equation by $\tau_\nu$:
 
 
-$$   \frac{dI_\nu}{d\tau_\nu} = - I_\nu + S_\nu,
+$$
+\frac{dI_\nu}{d\tau_\nu} = - I_\nu + S_\nu,
 $$
 
 - $S_\nu$: source function
@@ -194,7 +229,9 @@ $$
 
 The ratio of the emission coefficient to the absorption coefficient:
 
-$$ S_\nu \equiv \frac{j_\nu}{\alpha_\nu}. $$
+$$
+S_\nu \equiv \frac{j_\nu}{\alpha_\nu}.
+$$
 
 $S_\nu$ is often a simpler physical quantity than the $j_\nu$.
 
@@ -204,29 +241,41 @@ $S_\nu$ is often a simpler physical quantity than the $j_\nu$.
 
 Using the integrating factor $e^{\tau_\nu}$,
 
-$$ \mathcal{I} = I_\nu \,e^{\tau_\nu}, \quad \mathcal{S} = S_\nu \,e^{\tau_\nu},  $$
+$$
+\mathcal{I} = I_\nu \,e^{\tau_\nu}, \quad \mathcal{S} = S_\nu \,e^{\tau_\nu},
+$$
 
 then the equation becomes
 
 
-$$ \frac{d \mathcal{I}}{d \tau_\nu} = \mathcal{S},$$
+$$
+\frac{d \mathcal{I}}{d \tau_\nu} = \mathcal{S},
+$$
 
 with the solution
 
 
-$$ \mathcal{I}(\tau_\nu) = \mathcal{I}(0) + \int^{\tau_\nu}_0 \mathcal{S}(\tau'_\nu)\, d \tau'_\nu. $$
+$$
+\mathcal{I}(\tau_\nu) = \mathcal{I}(0) + \int^{\tau_\nu}_0 \mathcal{S}(\tau'_\nu)\, d \tau'_\nu.
+$$
 
 Rewriting it give the *formal solution of the transfer equation*:
 
-$$ I_\nu(\tau_\nu) = I_\nu(0)\, e^{\tau_\nu} + \int^{\tau_\nu}_0 e^{-(\tau_\nu-\tau'_\nu)} \,S(\tau'_\nu)\, d \tau'_\nu.  $$
+$$
+I_\nu(\tau_\nu) = I_\nu(0)\, e^{\tau_\nu} + \int^{\tau_\nu}_0 e^{-(\tau_\nu-\tau'_\nu)} \,S(\tau'_\nu)\, d \tau'_\nu.
+$$
 - (Initial intensity diminished by absorption) + (integrated source diminished by absorption)
 
 
 ### For a constant source function
 
-$$  I_\nu(\tau_\nu) = I_\nu(0)\, e^{\tau_\nu} + S(\tau'_\nu)\, e^{-\tau_\nu} \int^{\tau_\nu}_0 e^{\tau'_\nu} \, d \tau'_\nu.   $$
+$$
+I_\nu(\tau_\nu) = I_\nu(0)\, e^{\tau_\nu} + S(\tau'_\nu)\, e^{-\tau_\nu} \int^{\tau_\nu}_0 e^{\tau'_\nu} \, d \tau'_\nu.
+$$
 
-$$ \therefore I_\nu(\tau_\nu) = I_\nu(0) \, e^{-\tau_\nu} + S_\nu (1- e^{-\tau_\nu}) =  S_\nu + e^{-\tau_\nu} (I_\nu(0) - S_\nu).   $$
+$$
+\therefore I_\nu(\tau_\nu) = I_\nu(0) \, e^{-\tau_\nu} + S_\nu (1- e^{-\tau_\nu}) =  S_\nu + e^{-\tau_\nu} (I_\nu(0) - S_\nu).
+$$
 
 - $I_\nu(0)$: Background light
 - $S_\nu(1-e^{-\tau_\nu})$: (Thermal) Radiation from the medium
@@ -254,20 +303,28 @@ $$ \therefore I_\nu(\tau_\nu) = I_\nu(0) \, e^{-\tau_\nu} + S_\nu (1- e^{-\tau_\
 
 From 
 
-$$ I_\nu(s) = I_\nu(s_0) \, \exp \left[ - \int^s_{s_0} \alpha_\nu (s') \,ds' \right], $$
+$$
+I_\nu(s) = I_\nu(s_0) \, \exp \left[ - \int^s_{s_0} \alpha_\nu (s') \,ds' \right],
+$$
 
 the probability of a photon traveling at least an optical depth $\tau_\nu$ is $e^{-\tau_\nu}$ (probability distribution function). Then the mean optical depth is
 
-$$ \langle \tau_\nu \rangle  = \int^\infty_0 \tau_\nu \, e^{-\tau_\nu} \, d\tau_\nu = 1. $$
+$$
+\langle \tau_\nu \rangle  = \int^\infty_0 \tau_\nu \, e^{-\tau_\nu} \, d\tau_\nu = 1.
+$$
 
 Mean physical distance traveled in a homogeneous medium = mean free path $l_\nu$ is 
 
 
-$$ \langle \tau_\nu \rangle = \alpha_\nu \, l_\nu = 1. $$
+$$
+\langle \tau_\nu \rangle = \alpha_\nu \, l_\nu = 1.
+$$
 
 Or
 
-$$ l_\nu = \frac{1}{\alpha_\nu} = \frac{1}{n\,\sigma_\nu}. $$
+$$
+l_\nu = \frac{1}{\alpha_\nu} = \frac{1}{n\,\sigma_\nu}.
+$$
 - Reciprocal of the absorption coefficient for homogeneous material.
 
 ---
